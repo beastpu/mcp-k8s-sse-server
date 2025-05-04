@@ -1,7 +1,7 @@
 # mcp-k8s
 
 ## Overview
-mcp-k8s is a lightweight Kubernetes management tool providing both CLI and API interfaces for Kubernetes cluster management. It simplifies the operation of Kubernetes resources, with special support for OpenKruise extensions (such as CloneSet and AdvancedStatefulSet).
+mcp-k8s is a lightweight Kubernetes management tool providing sse and stdio mode for Kubernetes cluster management. It simplifies Kubernetes resources operation in cursor IDE.
 
 ## Key Features
 - Kubernetes cluster connection and management
@@ -37,16 +37,6 @@ Start in stdio mode:
 ./k8s -mode=stdio
 ```
 
-## Project Structure
-- `biz/`: Business logic code
-  - `clientset/`: Kubernetes client related code
-  - `pod/`: Pod operations
-  - `node/`: Node management
-  - `context/`: Cluster context management
-  - `kruise/`: OpenKruise resource management
-  - `configmap/`: ConfigMap management
-- `main.go`: Application entry point
-
 ## Cursor msp.json
 ```
 {
@@ -57,4 +47,14 @@ Start in stdio mode:
   }
 }
 ```
+
+## Project Structure
+- `biz/`: Business logic code
+  - `clientset/`: Kubernetes client related code
+  - `pod/`: Pod operations
+  - `node/`: Node management
+  - `context/`: Cluster context management
+  - `kruise/`: OpenKruise resource management
+  - `configmap/`: ConfigMap management
+- `main.go`: Application entry point
 
