@@ -4,13 +4,13 @@ import (
 	"flag"
 	"log"
 
-	"lilithgames/mcp-k8s-server/biz"
+	"github.com/beastpu/mcp-k8s-sse-server/biz"
 	// Import sub-packages to execute init functions
-	_ "lilithgames/mcp-k8s-server/biz/configmap"
-	_ "lilithgames/mcp-k8s-server/biz/context"
-	_ "lilithgames/mcp-k8s-server/biz/kruise"
-	_ "lilithgames/mcp-k8s-server/biz/node"
-	_ "lilithgames/mcp-k8s-server/biz/pod"
+	_ "github.com/beastpu/mcp-k8s-sse-server/biz/configmap"
+	_ "github.com/beastpu/mcp-k8s-sse-server/biz/context"
+	_ "github.com/beastpu/mcp-k8s-sse-server/biz/kruise"
+	_ "github.com/beastpu/mcp-k8s-sse-server/biz/node"
+	_ "github.com/beastpu/mcp-k8s-sse-server/biz/pod"
 
 	"github.com/ThinkInAIXYZ/go-mcp/server"
 	"github.com/ThinkInAIXYZ/go-mcp/transport"

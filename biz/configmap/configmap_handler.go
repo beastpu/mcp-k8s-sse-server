@@ -3,8 +3,9 @@ package configmap
 import (
 	"context"
 	"fmt"
-	"lilithgames/mcp-k8s-server/biz"
-	kubeclient "lilithgames/mcp-k8s-server/biz/clientset"
+
+	"github.com/beastpu/mcp-k8s-sse-server/biz"
+	kubeclient "github.com/beastpu/mcp-k8s-sse-server/biz/clientset"
 
 	"github.com/ThinkInAIXYZ/go-mcp/protocol"
 	"github.com/ThinkInAIXYZ/go-mcp/server"
