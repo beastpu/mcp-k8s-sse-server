@@ -37,7 +37,7 @@ Start in stdio mode:
 ./k8s -mode=stdio
 ```
 
-## Cursor msp.json
+## Cursor mcp.json
 ```
 {
   "mcpServers": {
